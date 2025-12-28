@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Syropy – Bee Lavender</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="bee_lavender.jpg">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+<header class="menu">
+    <div class="logo">
+        <img src="bee_lavender.jpg" alt="Bee Lavender logo">
+        <span>Bee Lavender</span>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#oferta">Produkty</a></li>
+        <li><a href="#why">Dlaczego my</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#opinie">Opinie</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+</header>
+
+<section class="product-page">
+    <div class="product-card" data-theme="purple">
+
+        <!-- GALERIA -->
+        <div class="product-gallery">
+            <img id="mainImage" src="syropy.jpg" alt="Syrop z Czeremchy">
+        </div>
+
+        <!-- OPIS -->
+        <div class="product-main">
+            <h1 id="productName">Syrop z Czeremchy</h1>
+            <div class="rating" id="rating"></div>
+            <div class="price" id="price">15,00 zł</div>
+
+            <p class="product-desc" id="productDesc">
+                Naturalny smak i głęboki kolor – stworzony według domowej receptury!
+            </p>
+
+            <ul class="product-info">
+                <li><strong>Pojemność:</strong> <span id="productMl">250 ml</span></li>
+                <li><strong>Skład:</strong> <span id="productInfoIngredients">woda, cukier, czeremcha</span></li>
+            </ul>
+
+            <a id="buyBtn" class="buy-btn" href="https://www.olx.pl/d/oferta/syrop-z-czeremchy-amerykanskiej-CID757-ID11zS73.html">Kup produkt</a>
+
+            <!-- WARIANTY -->
+            <div class="product-options">
+                <img class="product-option active"
+                    src="syropy.jpg"
+                    data-name="Syrop z Czeremchy"
+                    data-desc="Naturalny smak i głęboki kolor – stworzony według domowej receptury!"
+                    data-ml="250 ml"
+                    data-price="15,00 zł"
+                    data-rating="4.8"
+                    data-theme="purple"
+                    data-images="syropy.jpg,syrop_czeremcha.jpg"
+                    data-link="https://www.olx.pl/d/oferta/syrop-z-czeremchy-amerykanskiej-CID757-ID11zS73.html"
+                    data-ingredients="woda, cukier, czeremcha"
+                    data-bottom-desc='
+                        <h2>Syrop z Czeremchy – pełny opis</h2>
+                        <div class="desc-columns">
+                            <div>
+                                <p><strong>Naturalny syrop z czeremchy</strong> – aromatyczny, ręcznie przygotowany, idealny do herbat i deserów.</p>
+                                <p>W 100% naturalny, bez konserwantów. Pojemność: 250 ml.</p>
+                            </div>
+                            <div>
+                                <h3>Właściwości</h3>
+                                <ul>
+                                    <li>Naturalny smak i aromat</li>
+                                    <li>Doskonale słodzi napoje i deser</li>
+                                    <li>Ręcznie przygotowany</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Jak stosować?</h3>
+                                <ul>
+                                    <li>Do herbaty, lemoniady i napojów owocowych</li>
+                                    <li>Jako dodatek do deserów i ciast</li>
+                                    <li>Przechowywać w lodówce po otwarciu</li>
+                                </ul>
+                            </div>
+                        </div>'>
+
+                <img class="product-option"
+                    src="syrop_miod.webp"
+                    data-name="Syrop Lawendowy Na Miodzie"
+                    data-desc="Orzeźwiające połączenie lawendy i cytryny."
+                    data-ml="250 ml"
+                    data-price="15,00 zł"
+                    data-rating="4.6"
+                    data-theme="yellow"
+                    data-images="syrop_miod.webp"
+                    data-link="https://www.olx.pl/d/oferta/syrop-lawendowy-na-miodzie-CID757-ID11xum7.html"
+                    data-ingredients="woda, cukier, miód, lawenda, cytryna"
+                    data-bottom-desc='
+                        <h2>Syrop Lawendowy Na Miodzie – pełny opis</h2>
+                        <div class="desc-columns">
+                            <div>
+                                <p><strong>Lawenda i miód</strong> – naturalny syrop o orzeźwiającym smaku, idealny do herbaty i deserów.</p>
+                                <p>250 ml, bez sztucznych dodatków.</p>
+                            </div>
+                            <div>
+                                <h3>Właściwości</h3>
+                                <ul>
+                                    <li>Aromatyczny i słodki</li>
+                                    <li>Relaksujący aromat lawendy</li>
+                                    <li>Naturalny skład</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Jak stosować?</h3>
+                                <ul>
+                                    <li>Do herbat, lemoniady i smoothie</li>
+                                    <li>Dodatek do ciast i deserów</li>
+                                    <li>Przechowywać w lodówce po otwarciu</li>
+                                </ul>
+                            </div>
+                        </div>'>
+
+                <img class="product-option"
+                    src="syrop_mieta.webp"
+                    data-name="Syrop Lawenda & Mięta"
+                    data-desc="Świeży, lekki syrop z nutą mięty."
+                    data-ml="300 ml"
+                    data-price="15,00 zł"
+                    data-rating="4.7"
+                    data-theme="green"
+                    data-images="syrop_mieta.webp"
+                    data-link="https://www.olx.pl/d/oferta/domowy-syrop-z-miety-CID757-ID16K7bb.html"
+                    data-ingredients="woda, cukier, lawenda, mięta"
+                    data-bottom-desc='
+                        <h2>Syrop Lawenda & Mięta – pełny opis</h2>
+                        <div class="desc-columns">
+                            <div>
+                                <p><strong>Syrop lawendowy z miętą</strong> – orzeźwiający, lekki, idealny do letnich napojów i deserów.</p>
+                                <p>300 ml, naturalny, bez konserwantów.</p>
+                            </div>
+                            <div>
+                                <h3>Właściwości</h3>
+                                <ul>
+                                    <li>Orzeźwiający aromat mięty i lawendy</li>
+                                    <li>Idealny do napojów i deserów</li>
+                                    <li>Ręcznie przygotowany</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Jak stosować?</h3>
+                                <ul>
+                                    <li>Do herbat, lemoniady, smoothie</li>
+                                    <li>Dodatek do deserów i ciast</li>
+                                    <li>Przechowywać w lodówce po otwarciu</li>
+                                </ul>
+                            </div>
+                        </div>'>
+            </div>
+        </div>
+
+        <!-- OPIS POZIOMY -->
+        <div class="product-bottom-desc" id="bottomDesc">
+            <!-- tutaj dynamicznie wstawiany dolny opis -->
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- O NAS -->
+
+<div class="footer-brand">
+  <div class="footer-brand-header">
+    <div class="logo">
+      <img src="bee_lavender.jpg" alt="Bee Lavender logo">
+    </div>
+    <h3 id="kontakt">Bee Lavender</h3>
+  </div>
+
+  <p>
+    Tworzymy naturalne produkty lawendowe: syropy, miody, mydełka i świece.
+    Ręczna produkcja, ekologia i pasja zamknięta w każdym detalu.
+  </p>
+</div>
+
+
+    <!-- SZYBKIE LINKI -->
+    <div class="footer-links">
+      <h4>Szybkie linki</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#oferta">Produkty</a></li>
+        <li><a href="#why">Dlaczego my</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#opinie">Opinie</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <!-- KONTAKT -->
+    <div class="footer-contact">
+      <h4>Kontakt</h4>
+      <p>Email: <a href="mailto:1beelavender@gmail.com">1beelavender@gmail.com</a></p>
+      <p>Telefon: <a href="tel:+48530982260">+48 530 982 260</a></p>
+      <p>Adres: ul. Wronowice, Polska</p>
+      <p class="footer-hours">🕒 Pon–Pt: 9:00–17:00</p>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-social">
+      <h4>Znajdź nas</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61578044713927&sk=photos" aria-label="Facebook"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/1beelavender" aria-label="Instagram"><img src="instagram.jpg" alt="Instagram"></a>
+        <a href="https://www.olx.pl/oferty/uzytkownik/3HaqW/" aria-label="OLX"><img src="olx.png" alt="OLX"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DÓŁ FOOTERA -->
+  <div class="footer-bottom">
+    <p>© 2025 Bee Lavender. Wszystkie prawa zastrzeżone.</p>
+    <div class="footer-legal">
+    Polityka prywatności
+      <span>•</span>
+      Regulamin
+    </div>
+  </div>
+</footer>
+
+<script>
+const card = document.querySelector(".product-card");
+const mainImage = document.getElementById("mainImage");
+const nameEl = document.getElementById("productName");
+const descEl = document.getElementById("productDesc");
+const mlEl = document.getElementById("productMl");
+const priceEl = document.getElementById("price");
+const ratingEl = document.getElementById("rating");
+const buyBtn = document.getElementById("buyBtn");
+const options = document.querySelectorAll(".product-option");
+const ingredientsEl = document.getElementById("productInfoIngredients");
+const bottomDesc = document.getElementById("bottomDesc");
+
+/* FUNKCJA GWIAZDEK */
+function stars(rate){
+  ratingEl.innerHTML = "";
+  for(let i = 1; i <= 5; i++){
+    ratingEl.innerHTML += i <= Math.round(rate) ? "★" : "☆";
+  }
+}
+
+/* FUNKCJA AKTUALIZACJI PRODUKTU */
+function updateProduct(option){
+  options.forEach(x => x.classList.remove("active"));
+  option.classList.add("active");
+
+  nameEl.textContent = option.dataset.name;
+  descEl.textContent = option.dataset.desc;
+  mlEl.textContent = option.dataset.ml;
+  priceEl.textContent = option.dataset.price;
+  if(option.dataset.ingredients) ingredientsEl.textContent = option.dataset.ingredients;
+  if(option.dataset.link) buyBtn.href = option.dataset.link;
+
+  card.setAttribute("data-theme", option.dataset.theme);
+  stars(option.dataset.rating);
+
+  mainImage.src = option.dataset.images.split(',')[0];
+
+  if(option.dataset.bottomDesc){
+    bottomDesc.innerHTML = option.dataset.bottomDesc;
+  }
+}
+
+/* OBSŁUGA KLIKNIĘCIA W WARIANT */
+options.forEach(o => {
+  o.onclick = () => updateProduct(o);
+});
+
+/* STARTOWY WARIANT */
+const start = document.querySelector(".product-option.active");
+if(start){
+  updateProduct(start);
+}
+</script>
+
+</body>
+</html>
